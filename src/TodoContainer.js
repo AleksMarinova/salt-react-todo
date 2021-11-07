@@ -8,7 +8,6 @@ const todoContainer = ({ todos, toggleDone, deleteTodo }) => (
       <Todo
         key={todo.key}
         todo={todo}
-        index={todos.indexOf(todo)}
         toggleDone={toggleDone}
         deleteTodo={deleteTodo} />
     ))
