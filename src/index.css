@@ -114,7 +114,16 @@ body {
   order: 3;
 }
 
-.todo-done-text {
+.todo-active-title{
+  font-weight: bold;
+}
+
+.todo-done-title {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.todo-done-description {
   text-decoration: line-through;
 }
 

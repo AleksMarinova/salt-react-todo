@@ -5,7 +5,7 @@ import App from './App';
 import Form from './Form';
 
 test('renders form', () => {
-  render(<Form />);
+  render(<App />);
   const linkElement = screen.getByText('Add Todo');
   expect(linkElement).toBeInTheDocument();
 });
