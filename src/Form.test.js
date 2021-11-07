@@ -35,7 +35,7 @@ test('adds todo', async () => {
   userEvent.type(screen.getByPlaceholderText('Add title for your todo'), mockTitle);
   userEvent.type(screen.getByPlaceholderText('Add description for your todo'), mockDescription);
   expect(screen.getByPlaceholderText('Add title for your todo')).toHaveValue('Buy milk');
-  expect(screen.getByPlaceholderText('Add title for your todo')).toHaveValue('Buy milk');
+  expect(screen.getByPlaceholderText('Add description for your todo')).toHaveValue('2l');
   fireEvent.click(screen.getByRole('button'));
   const todoCards = await screen.findAllByRole('listitem');
   expect(todoCards).toHaveLength(1);
